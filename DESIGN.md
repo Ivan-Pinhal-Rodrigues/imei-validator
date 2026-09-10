@@ -13,7 +13,7 @@ everything, check divisibility by 10.
 ## Why a separate `luhn.py` instead of inlining it into `imei.py`
 
 The Luhn algorithm isn't IMEI-specific. Keeping it as a standalone module
-with a generic `is_luhn_valid(number: str)` signature makes it reusable for
+with a generic `is_valid_luhn(number: str)` signature makes it reusable for
 any other Luhn-checked identifier without touching IMEI-specific code.
 
 ## Why serial-number decoding stops at format validation
