@@ -20,6 +20,10 @@ def test_lowercase_rejected():
     assert is_valid_serial("c02d12345678", APPLE_CLASSIC_FORMAT) is False
 
 
+def test_validate_serial_accepts_valid_serial():
+    assert validate_serial("C02D12345678", APPLE_CLASSIC_FORMAT) is None
+
+
 def test_validate_serial_raises_on_wrong_length():
     with pytest.raises(InvalidSerialError, match="12 characters"):
         validate_serial("SHORT", APPLE_CLASSIC_FORMAT)

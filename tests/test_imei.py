@@ -21,6 +21,10 @@ def test_is_valid_imei_rejects_non_digit_characters():
     assert is_valid_imei("49015420323751A") is False
 
 
+def test_validate_imei_accepts_valid_imei():
+    assert validate_imei(VALID_IMEI) is None
+
+
 def test_validate_imei_raises_with_specific_message_on_bad_checksum():
     with pytest.raises(InvalidIMEIError, match="Luhn checksum"):
         validate_imei("490154203237510")
