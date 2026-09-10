@@ -20,7 +20,7 @@ classifiers = [
 dev = ["pytest>=8", "hypothesis>=6", "ruff>=0.6"]
 
 [project.urls]
-Homepage = "https://github.com/<github-username>/imei-validator"
+Homepage = "https://github.com/Ivan-Pinhal-Rodrigues/imei-validator"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/imei_validator"]
