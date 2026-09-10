@@ -11,14 +11,14 @@ from .serial import (
 )
 
 __all__ = [
-    "is_valid_imei",
-    "validate_imei",
-    "InvalidIMEIError",
-    "is_luhn_valid",
-    "compute_check_digit",
-    "SerialFormat",
     "APPLE_CLASSIC_FORMAT",
-    "is_valid_serial",
-    "validate_serial",
+    "InvalidIMEIError",
     "InvalidSerialError",
+    "SerialFormat",
+    "compute_check_digit",
+    "is_luhn_valid",
+    "is_valid_imei",
+    "is_valid_serial",
+    "validate_imei",
+    "validate_serial",
 ]

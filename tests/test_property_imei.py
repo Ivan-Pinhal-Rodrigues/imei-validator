@@ -1,4 +1,5 @@
-from hypothesis import given, strategies as st
+from hypothesis import given
+from hypothesis import strategies as st
 
 from imei_validator.imei import is_valid_imei
 from imei_validator.luhn import compute_check_digit
